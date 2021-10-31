@@ -1,0 +1,7 @@
+$my-map: 1 2 3 4 5;
+@each $index,
+$value in $my-map {
+    .bg-#{$index} {
+        background: $value(+0.5);
+    }
+}
